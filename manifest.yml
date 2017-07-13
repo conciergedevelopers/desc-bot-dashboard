@@ -1,0 +1,8 @@
+---
+applications:
+- name: clinical-intel-dashboard
+  host: clinical-intel-dashboard
+  memory: 256M
+  services:
+  - clinical-desc-db
+  - desc-tone-read

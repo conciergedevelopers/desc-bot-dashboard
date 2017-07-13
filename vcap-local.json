@@ -1,0 +1,37 @@
+{
+  "services": {
+    "cloudantNoSQLDB": [
+      {
+        "name": "clinical desc-db",
+        "label": "cloudantNoSQLDB",
+        "plan": "Lite",
+        "credentials": {
+            "username": "",
+            "password": "",
+            "host": "",
+            "port": 443,
+            "url": ""
+            }
+      }
+    ],
+    "tone_analyzer": [
+        {
+            "credentials": {
+  "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
+  "username": "86ac565f-4a52-4a40-8a54-a955972c951e",
+  "password": "pAxcwc4BCttI"
+},
+            "syslog_drain_url": null,
+            "label": "tone_analyzer",
+            "provider": null,
+            "plan": "standard",
+            "name": "desc-tone-read",
+            "tags": [
+                "watson",
+                "ibm_created",
+                "ibm_dedicated_public"
+            ]
+        }
+    ]
+  }
+}
