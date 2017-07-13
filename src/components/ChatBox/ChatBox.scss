@@ -1,0 +1,95 @@
+@import '~styles/base/colors';
+
+.container {
+  margin-right: 1rem;
+  overflow: auto;
+  flex: 1;
+}
+
+.messageList {
+  margin: 0;
+  padding: 0;
+}
+
+.message {
+  list-style-type: none;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.warning {
+  background-color: $alert1Color;
+  border-bottom: 2px solid $alert2Color;
+  padding: 0.5rem 1rem;
+
+  .owner {
+    display: flex;
+  }
+
+  .trainingMsg {
+    flex: 1;
+  }
+
+  .ana, .user, .trainingMsg {
+    color: $primary2Color;
+  }
+  .text.ana {
+    background-color: $accent1Color;
+  }
+}
+
+.owner {
+  color: $accent2Color;
+  font-size: 0.875rem;
+
+  .user {
+    text-align: right;
+  }
+
+  .trainingMsg {
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+  }
+}
+
+.text {
+  position: relative;
+  color: $primary2Color;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin-bottom: 0;
+
+  &.ana {
+    margin-right: 100px;
+    background-color: rgba($accent1Color, 0.4);
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: 10px;
+      top: -20px;
+      border: 10px solid;
+      border-color: transparent transparent rgba($accent1Color, 0.4) transparent;
+    }
+  }
+
+  &.user {
+    background-color: $accent3Color;
+    margin-left: 100px;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: 10px;
+      top: -20px;
+      border: 10px solid;
+      border-color: transparent transparent $accent3Color transparent;
+    }
+
+  }
+}
